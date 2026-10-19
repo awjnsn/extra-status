@@ -6,4 +6,4 @@ Chroma key overlay for OBS for Extra Life donation status
 
 `make run` to test on Mac (requires LÖVE app)
 
-`make extra.zip` to package release for Windows
+`make release` to package release for Windows
