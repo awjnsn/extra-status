@@ -7,7 +7,6 @@ extra.zip: love-12.0-win64/extra.exe
 	mv love-12.0-win64 extra
 	zip -9 -r extra.zip extra/
 	rm -rf extra/
-	
 
 love-12.0-win64/extra.exe: love-12.0-win64 extra.love
 	cat love-12.0-win64/love.exe extra.love > love-12.0-win64/extra.exe
