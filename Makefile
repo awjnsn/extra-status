@@ -1,6 +1,8 @@
 run:
 	/Applications/love.app/Contents/MacOS/love ./src
 
+release: extra.zip
+
 extra.zip: love-11.5-win64/extra.exe
 	mv love-11.5-win64 extra
 	zip -9 -r extra.zip extra/
@@ -23,4 +25,4 @@ extra.love:
 clean:
 	- rm -rf love-11.5-win64 extra.love extra.zip extra/
 
-.PHONY: run clean
+.PHONY: run release clean
